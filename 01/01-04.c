@@ -1,4 +1,30 @@
 #include <stdio.h>
+void in(int a[], int size);
+void out(int a[], int size);
+int main(){
+  int a[10], b[5];
+  in(a, 10);
+  out(a, 10);
+  in(b, 5);
+  out(b, 5);
+  return 0;
+}
+void in(int a[], int size){
+  int i;
+  for(i=0; i<size; i++){
+    scanf("%d", &a[i]);
+  }
+}
+
+void out(int a[], int size){
+  int i;
+  for(i=0; i<size; i++){
+    printf("%d", a[i]);
+    }
+  printf("\n");
+  }
+
+#include <stdio.h>
 void inputArray( int a[], int size);
 void outputArray( int a[], int size);
 int insertArray( int a[], int num, int index, int size);

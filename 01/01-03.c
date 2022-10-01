@@ -1,4 +1,35 @@
-//정수를 입력 받다 0이 입력 되면 지금까지 입력된 정수를 역순으로 출력
+#include <stdio.h>
+int main(){
+  int a[100], i, num;
+  for(i=0; i<100; i++){
+    scanf("%d", &a[i]);
+    if(a[i]==0){
+      num = i;
+      break;
+      }
+    }
+  for(i=num-1; i>=0; i--){
+    printf("%d ", a[i]);
+  }
+  
+  return 0;
+}
+
+#include <stdio.h>
+int main(){
+  int a[100], i, num;
+  for(i=0; i<100; i++){
+    scanf("%d", &a[i]);
+    if(a[i]==0){
+      num = i;
+      for(i=num-1; i>=0; i--){
+        printf("%d ", a[i]);
+      }
+      break;
+      }
+    }
+  return 0;
+}
 
 #include <stdio.h>
 int main() {
@@ -16,6 +47,5 @@ int main() {
 	for(i = size-1; i>=0; i--){
 		printf("%d ", a[i]);
 	}
-	
 	return 0;
 }
